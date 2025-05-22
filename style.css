@@ -1,0 +1,132 @@
+:root {
+    --background-color: #F7F9FB; /* Light gray-white */
+    --text-color: #2D3748; /* Dark slate */
+    --bubble-me: #D1FAE5; /* Light teal for sent messages */
+    --bubble-other: #FFFFFF; /* White for received messages */
+    --accent-color: #26A69A; /* Soft teal accent */
+    --button-color: #FF6F61; /* Coral for buttons */
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+#login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login-page h2 {
+    margin-bottom: 20px;
+}
+
+#login-page input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #CBD5E0;
+    border-radius: 6px;
+    width: 200px;
+}
+
+#login-button, #create-chat, #send-button, #gift-button {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#register-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+    padding: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.message.me {
+    justify-content: flex-end;
+}
+
+.bubble {
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.me .bubble {
+    background-color: var(--bubble-me);
+}
+
+.message.other .bubble {
+    background-color: var(--bubble-other);
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E2E8F0;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #CBD5E0;
+    border-radius: 6px;
+}

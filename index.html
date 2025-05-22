@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkbariTalk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h2>Login to AkbariTalk</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button">Login</button>
+        <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+    </div>
+    
+    <!-- Chat Interface -->
+    <div id="chat-container" style="display: none;">
+        <div class="sidebar">
+            <div class="profile">
+                <img id="profile-photo" src="default-profile.png" alt="Profile">
+                <h3 id="profile-name">Username</h3>
+            </div>
+            <button id="create-chat">Create Chat</button>
+            <ul id="chat-list"></ul>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2 id="chat-title">Select a chat</h2>
+            </div>
+            <div class="chat-window" id="chat-window"></div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+                <input type="file" id="photo-input" accept="image/*">
+                <button id="gift-button">Gift</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
